@@ -1,20 +1,12 @@
-# My vimrc
+VIM Configuration
+------
 
-My vimrc for rails develop on linux. Your can fork or just use it.
-
-Manage vim scripts by Bundle.
-
-## Dependency
-
-* vim
-* git
+as simple as possible
 
 ## Install
 
-Install will overwrite your .vimrc, .gvimrc file and .vim folder, be sure **backup your vim config** first.
-
-    git clone git://github.com/chloerei/vimrc.git
-    cd vimrc
-    ./deploy.sh
-
-Done.
+```bash
+cd ~/
+git clone git@github.com:justqyx/vimrc.git .vim
+cp ~/.vim/vimrc ~/.vimrc
+```
