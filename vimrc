@@ -1,6 +1,13 @@
-colorscheme railscasts
+if has('gui_running')
+  set background=dark
+else
+  set background=light
+endif
 
-set guifont=Monaco\ 10
+colorscheme solarized
+let g:solarized_termcolors=256
+
+set guifont=Monaco\ 11
 
 set encoding=utf-8
 set fenc=utf-8
