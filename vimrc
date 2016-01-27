@@ -1,54 +1,48 @@
-if has('gui_running')
-  set background=dark
-else
-  set background=light
-endif
-
-colorscheme solarized
-let g:solarized_termcolors=256
-
-set guifont=Monaco\ 11
-
-set encoding=utf-8
-set fenc=utf-8
-
 set nocompatible
 
-set number
-set ruler
-set cursorline
+if has("syntax")
+  syntax on
+endif
 
+set background=dark
+
+filetype plugin indent on
+
+set showcmd
+set showmatch
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+set mouse=a
+set number
+set numberwidth=5
+set nobackup
+
+set guifont=PragmataPro:h14
+colorscheme twilight
+
+set enc=utf-8
+set fencs=utf-8
+set langmenu=en_US.UTF-8
+language message en_US.UTF-8
+
+set ai
+set nu
+set ru
 set expandtab
 set tabstop=2
 set shiftwidth=2
-
-set guioptions-=T
 set guioptions-=m
+set guioptions-=T
+set foldopen=all
+set bsdir=buffer "设置工作目录为当前编辑文件的目录
+set autochdir
 
-set incsearch
-set hlsearch
-
-set ignorecase smartcase
-
-set nobackup
-set noswapfile
-
-"set background=dark
-set helplang=cn
-
-set showmatch
-
-syntax on
-filetype on
-filetype plugin indent on
-
-:inoremap ( ()<Esc>i
-:inoremap { {}<Esc>i
-:inoremap [ []<Esc>i
-:inoremap ' ''<Esc>i
-:inoremap " ""<Esc>i
-:inoremap < <><Esc>i
-
-source $VIMRUNTIME/mswin.vim
-behave mswin
+:inoremap ( ()<ESC>i
+:inoremap { {  }<ESC>i<LEFT>
+:inoremap [ []<ESC>i
+:inoremap " ""<ESC>i
+:inoremap ' ''<ESC>i
+:inoremap < <><ESC>i
 
